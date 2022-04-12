@@ -146,10 +146,68 @@ body {
   /*  */
   /*  */
 
-.sect-header h2 {
+.page-heading-1 {
+  background-color: var(--colour-background-teal);
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.page-heading-1 h1 {
+  font-size: var(--text-h1);
+  color: var(--colour-h1);
+  text-align: center;
+  padding: 35px 0px;
+}
+
+.page-heading-1 h2 {
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  padding: 35px 0px;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  width: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.requirement-section {
+  background-color: var(--colour-background-teal);
+}
+
+.checklist-container {
+  background-color: rgba(128, 128, 128, 0.568);
+  width: 30%;
+  height: 300px;
+  margin-right: 35%;
+  margin-left: 35%;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.checklist-container h3 {
+  color: var(--colour-h1);
+  font-size: var(--text-h3);
   text-align: center;
 }
 
+.requirement-checklist-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.requirement-checklist-item p{
+  color: var(--colour-h1);
+  font-size: var(--text-p);
+}
 
 
   * {
