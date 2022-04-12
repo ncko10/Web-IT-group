@@ -23,21 +23,13 @@ body {
     background-color: var(--colour-background-teal);
   }
   
-  /* html {
+  html {
     box-sizing: border-box;
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
-  } */
-
-
-
-
-
-
-
-
+  }
 
 
 
@@ -54,9 +46,9 @@ body {
     align-items:center;
   }
 
-    /* .hero-text {
-        flex-direction: column;
-    } */
+  .hero-text button {
+      font-size: var(--text-h3);
+  }
 
     .hero-text h1 {
         font-size: var(--text-h1);
@@ -152,7 +144,7 @@ body {
     box-sizing: border-box;
 }
 
-#login {
+button {
     font-family: var(--font-family-body);
     font-weight: 600;
     font-size: var(--text-p);
@@ -168,21 +160,6 @@ body {
     border-radius: 999em;
 }
 
-#login-hero {
-    font-family: var(--font-family-body);
-    font-weight: 600;
-    font-size: var(--text-p);
-    border: none;
-    color: white;
-    background-color: var(--colour-h1);
-    padding: 5px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 999em;
-}
 
 html {
     font-size: 62.5%;
