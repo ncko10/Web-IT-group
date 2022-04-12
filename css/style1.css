@@ -32,6 +32,9 @@ body {
   }
 
 
+    /* HOMEPAGE STUFF */
+    /*  */
+    /*  */
 
   lottie-player {
       width: 800px;
@@ -64,6 +67,7 @@ body {
     }
 
     .sect-header {
+        background-color: var(--colour-background-teal);
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -77,6 +81,11 @@ body {
         color: white;
         text-align: center;
         padding: 35px 0px;
+    }
+
+    .sect-header h2 {
+      color: black;
+      font-weight: 300;
     }
 
     .feature-section {
@@ -133,8 +142,13 @@ body {
         text-align: center;
     }
 
-  
+  /* RECORD/MEASUREMENT PAGE */
+  /*  */
+  /*  */
 
+.sect-header h2 {
+  text-align: center;
+}
 
 
 
