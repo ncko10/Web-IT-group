@@ -2,9 +2,9 @@
 
 :root {
   --text-h1: 48px;
-  --text-h2: 28px;
-  --text-h3: 25px;
-  --text-p: 18px;
+  --text-h2: 36px;
+  --text-h3: 24px;
+  --text-p: 16px;
   --font-family-body: 'Poppins', sans-serif;
   --font-family-heading: 'Poppins', sans-serif;
   --font-family-button: 'Poppins', sans-serif;
@@ -23,77 +23,128 @@ body {
     background-color: var(--colour-background-teal);
   }
   
-  html {
+  /* html {
     box-sizing: border-box;
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+  lottie-player {
+      width: 800px;
+      height: 800px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
   .hero-section {
-    height: 100%;
+    height: 75vh;
     background-color: var(--colour-background-teal);
     display: flex;
     justify-content: center;
     align-items:center;
   }
 
-    .hero-text {
+    /* .hero-text {
         flex-direction: column;
-        /* margin: 150px 150px; */
-    }
+    } */
 
     .hero-text h1 {
         font-size: var(--text-h1);
         color: var(--colour-h1);
+        margin-bottom : -10px;
     }
 
     .hero-text h2 {
         font-size: var(--text-h2);
         font-weight: 400;
         color: var(--colour-h1);
+        margin-bottom: 20px;
+    }
+
+    .sect-header {
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow:inset 0 0 0 2000px rgba(26, 25, 26, 0.3);
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .sect-header h1 {
+        font-size: var(--text-h1);
+        color: white;
+        text-align: center;
+        padding: 35px 0px;
     }
 
     .feature-section {
         background-color: var(--colour-h1);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        padding-top: 4em;
+        padding-bottom: 4em;
     }
 
-    .feature-section h1 {
+    .feature-list-item {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        align-items: center;
+        max-width: 70%;
+        padding: 1em;
+    }
+
+    .caption {
+      margin-left: 25px;
+      font-size: var(--text-h3);
+      padding: 0.5em 1em;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-section {
+        background-color: var(--colour-background-teal);
+        color: var(--colour-h1);
+        display: flex;
+        flex-direction: column;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .contact-section h1 {
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
         font-size: var(--text-h1);
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .contact-section h3 {
+        font-size: var(--text-h3);
+        font-weight: 300;
         text-align: center;
     }
 
-    .feature-list {
-        justify-content: center;
-    }
-
-
-
-
-
-    
-
-
-
-
-
-
   
+
+
+
 
   * {
     margin: 0;
@@ -101,7 +152,23 @@ body {
     box-sizing: border-box;
 }
 
-.login {
+#login {
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    font-size: var(--text-p);
+    border: none;
+    color: white;
+    background-color: var(--colour-h1);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 999em;
+}
+
+#login-hero {
     font-family: var(--font-family-body);
     font-weight: 600;
     font-size: var(--text-p);
@@ -158,7 +225,7 @@ a {
 */
 
 .nav-link{
-  font-size: var(--text-h2);
+  font-size: var(--text-h3);
   font-weight: 600;
   color: var(--colour-h2);
   display: block;
@@ -184,7 +251,7 @@ min-width: 140px;
 box-shadow: 0px 8px 16px 0px transparent;
 z-index: 1;
 padding: 10px 10px 10px;
-font-size: var(--text-h2);
+font-size: var(--text-h3);
 font-weight: 500;
 text-align: centre;
 }
@@ -239,17 +306,59 @@ body
   display: none;
 }
 
-#menu {
+/* #menu {
   display: none;
-}
+} */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
+
+  .logo {
+    font-size: var(--text-h2);
+  }
+
   .navbar ul:not(:first-child) {
     display: none;
   }
 
-  #logout {
+  .nav-menu {
+      display:none;
+  }
+
+  .hero-section {
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+
+  lottie-player {
+      margin: -50px 0px 0px 0px;
+      width: 375px;
+      height: 375px;
+  }
+
+  .hero-text {
+      /* padding: 0px 0px 0px 60px; */
+      margin: -50px 0px 0px 0px;
+      width: 50%;
+  }
+
+  .hero-text h1 {
+      font-size: var(--text-h2);
+      font-weight: 600;
+      line-height: 1.0;
+  }
+
+  .hero-text h2 {
+    margin-top: 15px;
+    font-size: var(--text-h3);
+    font-weight: 400;
+}
+
+  #login {
     display: none;
+  }
+
+  #logout {
+      display:none;
   }
     
   #menuToggle {
@@ -354,9 +463,9 @@ body
   * at the top left of the screen
   */
   #menu {
-    display: block;
     position: absolute;
     width: 300px;
+    height: 100vh;
     margin: 25px 0 0 -250px;
     padding: 40px;
     padding-bottom: 300px;
@@ -385,6 +494,11 @@ body
   #menuToggle input:checked ~ ul
   {
     transform: none;
+  }
+
+  
+  #menuToggle input:checked ~ #menu {
+    display: block;
   }
 
   hr.solid {
