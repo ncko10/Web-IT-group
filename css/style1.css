@@ -190,7 +190,7 @@ body {
   margin-right: 35%;
   margin-left: 35%;
   border-radius: 25px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .checklist-container h3 {
@@ -202,6 +202,10 @@ body {
 .requirement-checklist-item {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 20px;
 }
 
 .requirement-checklist-item p{
@@ -322,8 +326,8 @@ display: block;
   font-size: var(--text-h1);
   font-weight: 950;
   color: var(--colour-h1);
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
 }
 
 .footer {
