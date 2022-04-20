@@ -79,14 +79,34 @@
         </div>
     </div>
 
+    <!-- also use IF statements to check which measurements are required.
+
+    if the measurement has been recorded for the day, render a tick, otherwise, render an empty circle -->
+
     <div class="measurement-input-section">
         <div class="container">
             <h1>Input your weight</h1>
-            <div class="input-field-item">
-                <p></p>
-            </div>
+
+            <!-- have some handlebars here, replace the weight text with the handlebar params -->
+            <!-- example:
+            Input your {{weight}} -->
+
+            <!-- use IF statements to check if a certain measurement is "ticked" AKA required by clinician.
+            If yes then, render the input fields -->
+
+            <!-- use IF statements to check if a certain measurement has been measured for that day.
+            If yes, do not render. -->
+
+            <form action="/measurement.html" id="weight-form">
+                <label for="weight">Weight</label>
+                <input type="text" placeholder="Input value here" name="weight" id="weight">
+                
+            </form>
+
+            <button type="submit" form="weight-form" value="S">Submit</button>
         </div>
     </div>
+
 
     <div class="footer">
         <a href="#" class="logo"><span style="color:black">D</span>@H</a>
