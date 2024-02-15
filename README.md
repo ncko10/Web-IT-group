@@ -197,9 +197,9 @@ This web app is only for use for INFO30005 Web Information Technologies 2022 Sem
 
 - Yi Sheon Tan - ystan@student.unimelb.edu.au
 - Kian Dsouza - kiand@student.unimelb.edu.au
-- Nic
+- Sanskar - sanskara@student.unimelb.edu.au
 - Anh
-- Sanskar
+- Nic 
 
 Project Link: [https://github.com/ncko10/Web-IT-group/](https://github.com/ncko10/Web-IT-group/)
 
